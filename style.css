@@ -1,0 +1,39 @@
+body {
+  background: lightblue;
+}
+
+h1 {
+  text-indent: 1em;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-left: 7px  solid gray;
+  border-right: 1px solid gray;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background: lightgray;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+/* 時刻:時間 */
+td.hour {
+}
+
+/* 時刻:分(最右端以外用) */
+td.min_other {
+  border-left-style: none;
+  border-right-style: none;
+}
+/* 時刻:分(最右端用) */
+td.min_right {
+  border-left-style: none;
+}
+
