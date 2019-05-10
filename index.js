@@ -1,6 +1,6 @@
-//  alert("Hello");
+  alert("Hello");
 
-//  console.log("index.js: loaded");
+  console.log("index.js: loaded");
 
   
 //  const xhr = new XMLHttpRequest();
@@ -25,19 +25,19 @@
   xhr.open("GET", `https://rti-giken.jp/fhc/api/train_tetsudo/delay.json`, true);
   xhr.responseType = 'json';
   xhr.onreadystatechange = function() {
-    if(xhr.readyState === 0) {	// ‘€ì‚ªŠ®—¹‚µ‚½
+    if(xhr.readyState === 0) {	// æ“ä½œãŒå®Œäº†ã—ãŸ
       if(xhr.status === 200) {	// OK
         console.log(xhr.response);
         
         var json = JSON.parse(xhr.response);
         
-        var company = JR“Œ“ú–{;
-        var name1 = Rèü;
-        var name2 = Ã“ìVhƒ‰ƒCƒ“;
-        var name3 = “ŒŠC“¹ü;
-        var name4 = ‰F“s‹{ü;
-        var name5 = ‚èü;
-        var name6 = ‹•l“Œ–kü;
+        var company = JRæ±æ—¥æœ¬;
+        var name1 = å±±æ‰‹ç·š;
+        var name2 = æ¹˜å—æ–°å®¿ãƒ©ã‚¤ãƒ³;
+        var name3 = æ±æµ·é“ç·š;
+        var name4 = å®‡éƒ½å®®ç·š;
+        var name5 = é«˜å´ç·š;
+        var name6 = äº¬æµœæ±åŒ—ç·š;
       }
     }
   };
