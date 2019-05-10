@@ -1,29 +1,9 @@
   alert("Hello");
-
-  console.log("index.js: loaded");
-
-  
-//  const xhr = new XMLHttpRequest();
-//  xhr.open("GET", `https://www.yahoo.co.jp/`);
-//  xhr.addEventListener("load", (event) => {
-//      if (event.target.status !== 200) {
-//          console.error(`${event.target.status}: ${event.target.statusText}`);
-//          return;
-//      }
-//      console.log(event.target.status);
-//      console.log(event.target.responseText);
-//  });
-//  xhr.addEventListener("error", () => {
-//      console.error("Network Error");
-//  });
-//  xhr.send();
-  
-  
-  
   
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", `https://rti-giken.jp/fhc/api/train_tetsudo/delay.json`, true);
-  xhr.responseType = 'json';
+//  xhr.open("GET", `https://rti-giken.jp/fhc/api/train_tetsudo/delay.json`, true);
+  xhr.open("GET", `https://www.yahoo.co.jp/`, true);
+//  xhr.responseType = 'json';
   xhr.onreadystatechange = function() {
     if(xhr.readyState === 0) {	// 操作が完了した
       if(xhr.status === 200) {	// OK
