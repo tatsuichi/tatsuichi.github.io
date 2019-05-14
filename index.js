@@ -18,7 +18,11 @@
         var name4 = 宇都宮線;
         var name5 = 高崎線;
         var name6 = 京浜東北線;
+      } else {
+        console.log(xhr.status);
       }
+    } else {
+      console.log(xhr.readyState);
     }
   };
   xhr.send();
