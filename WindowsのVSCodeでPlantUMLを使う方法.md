@@ -8,3 +8,8 @@
 # 手順
 1. VS Codeの拡張機能で、PlantUMLをインストールする
 2. [Jave](https://www.java.com/ja/download/)をダウンロードする
+
+ファイル出力する
+```
+PlantUML:Export Current File Diagrams
+```
